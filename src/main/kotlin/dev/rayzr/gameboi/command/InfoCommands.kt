@@ -24,7 +24,7 @@ object HelpCommand : Command("help", "Shows you help for Gameboi", category = Ca
 
                     "> __**${category.key.name}**__\n\n $categoryCommands"
                 }.joinToString("\n\n"))
-                setAuthor("Gameboi Help Commands", "https://github.com/RayzrDev/Gameboi", event.jda.selfUser.effectiveAvatarUrl)
+                setAuthor("Bronzehail", "https://github.com/Bronzehail45833", event.jda.selfUser.effectiveAvatarUrl)
                 setColor(0x353940)
                 build()
             }
@@ -39,7 +39,7 @@ object InviteCommand : Command("invite", "Gives you an invite link for Gameboi",
             setTitle("Ready to level up your server with some fun?")
             setDescription(":tada: Click [here](${event.jda.getInviteUrl(Permission.MESSAGE_MANAGE)}) to add **Gameboi** to your server!")
 //            setThumbnail(event.jda.selfUser.avatarUrl)
-            setImage("https://raw.githubusercontent.com/RayzrDev/Gameboi/master/res/banner.png")
+            setImage("https://upload.wikimedia.org/wikipedia/commons/f/f4/Xxxtentacion_mugshot.jpg")
 
             setColor(0x353940)
             build()
@@ -54,22 +54,21 @@ object AboutCommand : Command("about", "Shows you more information about Gameboi
             setTitle("What is Gameboi?")
 
             setDescription("""
-                **Gameboi** is a simple Discord bot made for Discord Hack Week 2019 with a plethora of small games you can play, a charming and nostalgic pixel art style, and a global currency and rewards system!
+                **Gameboi** is a simple Discord bot made for recreation purposes , it consists of small games you can play, a charming and nostalgic pixel art style, and a global currency and rewards system!
                 
                 With **2 multiplayer** games (Fight & Connect 4) and **2 singleplayer** games (Hangman & 2048), Gameboi is sure to liven up any server, and the charm of its retro pixel-art graphics feels right at home to any old-school gamer.
                 
                 :tada: Click [here](${event.jda.getInviteUrl(Permission.MESSAGE_MANAGE)}) to add **Gameboi** to your server!
-                :link: Click [here](https://github.com/RayzrDev/Gameboi) to check out the source code for **Gameboi**!
-                :heart: Click [here](https://patreon.com/Rayzr522) if you want to support **Gameboi** and its creators!
+                :link: Click [here] https://m.youtube.com/channel/UCntgmW3Jq7Q1egD2e2SoR5g
             """.trimIndent())
 
             addField("Servers", "%,d".format(Gameboi.shardManager.guilds.size), true)
             addField("Users", "%,d".format(Gameboi.shardManager.users.size), true)
 
             val shardInfo = event.jda.shardInfo
-            setFooter("Created by Rayzr522#9429 and zp4rker#3333 || Shard %d/%d".format(shardInfo.shardId + 1, shardInfo.shardTotal))
+            setFooter("Created by Bronzehail || Shard %d/%d".format(shardInfo.shardId + 1, shardInfo.shardTotal))
 
-            setImage("https://raw.githubusercontent.com/RayzrDev/Gameboi/master/res/banner.png")
+            setImage("https://raw.githubusercontent.com/Bronzehail45833")
 
             setColor(0x353940)
             build()
